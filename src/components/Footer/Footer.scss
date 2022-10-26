@@ -1,0 +1,58 @@
+@import "../../utils/variables.scss";
+
+.footer {
+  padding: 80px 0 0 0;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $deep_gray;
+  color: #c7c7c7;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    p {
+      max-width: 600px;
+      text-align: center;
+      color: #c7c7c7;
+    }
+
+    .subscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        border: 1px solid $secondary_color;
+        color: $secondary_color;
+        outline: none;
+        background: transparent;
+        border-radius: 10px;
+      }
+      .button {
+        padding: 10px 20px;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      gap: 15px;
+
+      li {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .copy_write {
+    border-top: 0.5px solid #443e5a;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+  }
+}

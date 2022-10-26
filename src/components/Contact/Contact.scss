@@ -1,0 +1,106 @@
+@import "../../utils/variables.scss";
+
+.contact {
+  padding: 100px 0;
+  background: #fff2e2;
+
+  .flex {
+    gap: 50px;
+  }
+
+  .left {
+    flex: 1;
+    width: 100%;
+
+    h4 {
+      font-weight: 400;
+      color: $secondary_color;
+      font-size: 18px;
+    }
+
+    form {
+      .flex {
+        width: 100%;
+        gap: 20px;
+      }
+      .input_grp {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+
+        label {
+          font-size: 17px;
+          font-weight: 500;
+        }
+
+        .input {
+          display: flex;
+          gap: 10px;
+          padding: 8px 12px;
+          border: 1px solid $light_indigo;
+          background: $white;
+          border-radius: 8px;
+          color: #52525da1;
+
+          span {
+            width: 20px;
+            height: 20px;
+          }
+          input {
+            width: calc(100% - 20px);
+            border: none;
+            outline: none;
+            background: transparent;
+          }
+        }
+      }
+    }
+  }
+
+  .right {
+    flex: 1;
+
+    form {
+      input,
+      .textarea {
+        border: none;
+        padding: 8px 0;
+        color: $deep_gray;
+        outline: none;
+        background: transparent;
+        width: 100%;
+        border-bottom: 2px solid $deep_gray;
+      }
+      .flex {
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+
+        .input_grp {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+
+          label {
+            font-size: 17px;
+            font-weight: 600;
+          }
+        }
+      }
+
+      .check {
+        display: flex;
+        gap: 10px;
+
+        input {
+          width: fit-content;
+        }
+
+        label {
+          font-size: 17px;
+        }
+      }
+    }
+  }
+}

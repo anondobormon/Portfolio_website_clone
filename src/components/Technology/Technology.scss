@@ -1,0 +1,30 @@
+@import "../../utils/variables.scss";
+
+.technology {
+  padding: 100px 0;
+
+  .title {
+    text-align: center;
+  }
+
+  .flex {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    .item {
+      display: flex;
+      align-items: center;
+      max-width: 200px;
+      width: 100%;
+      padding: 30px 50px;
+      background: $light_primary;
+      flex-direction: column;
+      border-radius: 5px;
+      gap: 10px;
+
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+}

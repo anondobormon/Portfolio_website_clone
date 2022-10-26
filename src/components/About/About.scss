@@ -1,0 +1,38 @@
+@import "../../utils/variables.scss";
+
+.about {
+  padding: 100px 0;
+
+  .flex {
+    gap: 100px;
+    .left {
+      flex: 1;
+      width: 100%;
+
+      img {
+        max-width: 600px;
+        width: 100%;
+      }
+    }
+    .right {
+      flex: 1;
+
+      h4 {
+        font-weight: 400;
+        font-size: 20px;
+        color: $secondary_color;
+      }
+
+      p {
+        margin-bottom: 30px;
+      }
+
+      ul {
+        margin-top: 15px;
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+    }
+  }
+}

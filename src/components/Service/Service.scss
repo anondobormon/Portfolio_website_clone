@@ -1,0 +1,64 @@
+.service {
+  padding: 100px 0;
+  .title {
+    text-align: center;
+  }
+
+  .grid {
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    .card {
+      width: 100%;
+      border-radius: 5px;
+      overflow: hidden;
+      padding: 40px 30px;
+      transition: 0.3s ease;
+      cursor: pointer;
+
+      .sub_title {
+        font-size: 23px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+
+        span {
+          visibility: hidden;
+          opacity: 0;
+          transition: 0.3s ease;
+        }
+      }
+      p {
+        margin-bottom: 10px;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      &:hover {
+        .sub_title {
+          span {
+            visibility: visible;
+            opacity: 1;
+            margin-left: 10px;
+          }
+        }
+      }
+
+      &.yellow {
+        background: #fff2e2;
+      }
+      &.light_golden {
+        background: #d2d9fd;
+      }
+      &.blue {
+        background: #c8ebff;
+      }
+      &.indigo {
+        background: #eee0f7;
+      }
+    }
+  }
+}
